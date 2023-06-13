@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0 !important;
+  padding-left: 2rem !important;
+  overflow: hidden;
+  background-color: #07032B;
+  padding-top: 1rem;
+}
+
+li {
+  display: inline;
+}
+
+.float-left {
+  float: right;
+}
+
+.a {
+  font-size: 20px;
+  display: inline-block;
+  color: #2798EE;
+  padding: 15px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+
+.a:hover {
+  color: #78b7e7;
+}
+
+.App {
+  overflow: hidden;
+}
