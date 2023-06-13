@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
 import Card from "../components/card";
+import img from "../image/1.png"
+
 import { Link } from "react-router-dom";
 import "../components/Nav.css";
 function Home() {
@@ -30,7 +32,7 @@ function Home() {
         <div>
           <ul>
             <li>
-              <img src="src\image\1.png" alt="LOGO" style={{ width: "10%" }} />
+              <img src={img} alt="LOGO" style={{ width: "10%" }} />
             </li>
             <div className="float-left">
               <li>

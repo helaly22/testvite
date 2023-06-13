@@ -1,12 +1,13 @@
 import "./Welcome.css";
 import "./Sign-in.css";
+import img from "../image/1.png"
 import { Link } from "react-router-dom";
 function Welcome() {
   return (
     <>
       <div className="box">
         <div className="inner">
-          <img className="logo" src="./src/image/1.png" alt="movie poster" />
+          <img className="logo" src={img} alt="movie poster" />
           <div className="login">
             <Link to="/testvite/Sign-in">
               <button> Sign-in </button>
