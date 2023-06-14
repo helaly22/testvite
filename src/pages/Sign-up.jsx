@@ -23,7 +23,7 @@ function SignUp() {
       })
       .then((data) => {
         console.log(data.data);
-        Navigate("/Sign-in");
+        Navigate("/testvite//Sign-in");
       });
   };
 
@@ -33,7 +33,7 @@ function SignUp() {
         <div className="group2">
           <div className="form-group2">
             <p>
-              <b>Create Your Account</b>{" "}
+              <b>Create Your Account</b>
             </p>
             <div className="input">
               <div className="Icon-inside">
