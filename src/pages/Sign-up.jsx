@@ -23,7 +23,7 @@ function SignUp() {
       })
       .then((data) => {
         console.log(data.data);
-        Navigate("/testvite//Sign-in");
+        Navigate("/testvite/Sign-in");
       });
   };
 
