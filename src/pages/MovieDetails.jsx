@@ -18,7 +18,7 @@ function MovieDetails(){
     }, []);
     return(
         <>
-        <Card data={datas} showbutton={false}/>
+        <Card className="cards" data={datas} showbutton={false}/>
         </>
     )
 }

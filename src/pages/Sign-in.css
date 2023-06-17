@@ -1,154 +1,200 @@
 .group {
-    background-image: url(https://images.alphacoders.com/104/1044504.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  background-image: url(https://images.alphacoders.com/104/1044504.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .group2 {
-    background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700266595-optimized.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700266595-optimized.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group {
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 365px;
+  gap: 1rem;
+  background: #00000077;
+  color: rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
+
 }
 
 .form-group2 {
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    top: 16%;
-    left: 53%;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    gap: 1rem;
-
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 53%;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 1rem;
+  background: #00000077;
+  color: rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
 }
 
 .form-group h3 {
-    color: black;
-    margin-left:5px ;
+  color: rgba(255, 255, 255, 0.664);
+  margin-left: 5px;
+  font-size: 15px;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .button h6 {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .button button {
-    border-radius: 25px;
-    padding: 15px 17px ;
-    background-color:rgba(0, 0, 0, 0.171);
-    color:black;
-    cursor: pointer;
-    font-size: 15px;
+  border-radius: 25px;
+  padding: 15px 17px;
+  background-color: rgba(0, 0, 0, 0.171);
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-
-
 .input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 .input input {
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 10px 25px;
-    background-color: rgba(233, 225, 225, 0.589);
-    color: black;
-
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 25px;
+  background-color: rgba(233, 225, 225, 0.589);
+  color: black;
 }
 
 .icon {
-    color: rgb(224, 224, 224);
+  color: rgb(224, 224, 224);
 }
 
 .icons {
-    display: flex;
+  display: flex;
 }
 
 .Icon-inside {
-    position: relative;
+  position: relative;
 }
 
 .Icon-inside .icon {
-    position: absolute;
-    left: 5px;
-    top: 14px;
-    color: rgb(24, 23, 23);
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  color: rgb(24, 23, 23);
 }
 
 .Sign_in {
-    cursor: pointer;
-    border: none;
-    width: 65%;
-    height: 30px;
-    border-radius: 20px;
-    background-color: rgba(233, 225, 225, 0.589);
+  cursor: pointer;
+  border: none;
+  width: 65%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgba(233, 225, 225, 0.589);
+  /* margin-top: 5px; */
 }
 
 .Sign_in .link {
-    width: 100%;
+  width: 100%;
 }
 
 fieldset {
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    border-color: #E895EC;
-    width: 100%;
-    padding: 0px;
-    color: #E895EC;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-color: #e895ec;
+  width: 100%;
+  padding: 0px;
+  color: #e895ec;
 }
 
 legend {
-    width: 50%;
-    font-size: smaller;
-    padding: 1px 1px;
+  width: 50%;
+  font-size: smaller;
+  padding: 1px 1px;
 }
 
 .button .btn {
-    
-    border: none;
-    width: 30%;
-    padding: 10px 10px;
-    border-radius: 20px;
-    background-color: rgba(233, 225, 225, 0.342);
+  border: none;
+  width: 30%;
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: rgba(233, 225, 225, 0.342);
+}
+@media (max-width: 768px) {
+  
+  .form-group {
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 19%;
+    left: 8%;
+    padding: 17px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 360px;
+    gap: 1rem;
+    background: #0000009d;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.664);
+  }
+  .form-group h3{
+    color: rgba(255, 255, 255, 0.664);
+    /* font-size: 12px; */
+  }
+  .form-group2{
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 19%;
+    left: 8%;
+    padding: 17px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 1rem;
+    background: #0000009d;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.664);
+  }
+  .Sign_in{
+    height: 30px;
+  }
 }

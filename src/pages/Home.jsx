@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
 import "./Home.css";
 import Card from "../components/card";
-import img from "../image/1.png"
-
+import img from "../image/1.png";
+import "./nav.css";
 import { Link } from "react-router-dom";
-import "../components/Nav.css";
+import Carousel from "../components/test";
 function Home() {
+  // const naiem = () => {
+  //   const hamburger = document.querySelector(".hamburger");
+  //   const nav = document.querySelector("nav");
+  //   hamburger.onclick = function () {
+  //     nav.classList.toggle("active");
+  //   };
+  // };
   const [datas, setData] = useState([]);
   const [Search, setSearch] = useState([]);
   const [Data, setDatas] = useState([]);
@@ -28,47 +35,80 @@ function Home() {
   }, []);
   return (
     <>
-      <nav>
-        <div>
-          <ul>
-            <li>
-              <img src={img} alt="LOGO" style={{ width: "10%" }} />
-            </li>
-            <div className="float-left">
+      <header>
+        <div className="header-left">
+          <div className="logo1">
+            <Link to={"/testvite/home"}>
+              {" "}
+              <img src={img} alt="" />
+            </Link>
+          </div>
+          <nav id="nav">
+            <ul>
               <li>
-                <input
-                  type="text"
-                  placeholder="Search"
-                  onChange={(e) => {
-                    setSearch(e.target.value.toUpperCase());
-                  }}
-                />
-              </li>
-              <li>
-                <Link className="a" to={"/testvite/sign-in"}>
-                  Log Out
+                <Link to="/testvite/home" className="active">
+                  Home
                 </Link>
               </li>
-            </div>
-          </ul>
+              <li>
+                <Link to="">Movies</Link>
+              </li>
+              <li>
+                <Link to="">TV Show</Link>
+              </li>
+              <li>
+                <Link to="">Trending</Link>
+              </li>
+              <li>
+                <Link to={"/testvite/Sign-in"}>LogOut</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </nav>
-      <div className="row">
+        <input
+          className="search"
+          type="text"
+          placeholder="Search"
+          onChange={(e) => {
+            setSearch(e.target.value.toUpperCase());
+          }}
+        />
+        <div className="header-right">
+          <div
+            className="hamburger"
+            id="hamburger"
+            onClick={() => {
+              document.getElementById("nav").classList.toggle("active");
+            }}
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </header>
+      <div className="row1">
         {Data.map((data) => {
           return Search == data.title ? (
-            <div key={data.id} className="col-3">
-              <Card data={data} showbutton={true} />
+            <div key={data.id} className="show">
+              <Card className="cards" data={data} showbutton={true} />
             </div>
           ) : null;
         })}
       </div>
+
+      <Carousel />
       {Search == "" && (
-        <div className="row">
+        <div className="row1">
           {datas.map((data) => {
             return (
-              <div key={data.id} className="col-3">
-                <Card data={data} showbutton={true} />
+              
+              <>
+              <div key={data.id} className="show">
+                <Card className="cards" data={data} showbutton={true} />
               </div>
+            
+              </>
             );
           })}
         </div>

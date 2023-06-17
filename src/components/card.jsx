@@ -9,13 +9,15 @@ function Card(props) {
     AOS.init();
   }, []);
   return (
+    <>
+
     <div
-      data-aos="fade-up"
+      data-aos="fade-down"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="2000"
     >
-      <div className="row">
-        <div className="card">
+      <div className="row1">
+        <div className="cards">
           <img
             src={data.image}
             className="card-img-top"
@@ -26,7 +28,7 @@ function Card(props) {
           />
           <div className="card-body">
             <b>
-              <h6 className="card-title">{data.title}</h6>
+              <p className="card-name">{data.title}</p>
             </b>
             <p>
               <b>{data.year}</b>
@@ -47,21 +49,21 @@ function Card(props) {
                       <div className="carousel-item active ">
                         <img
                           src={data.image1}
-                          className="d-block w-100"
+                          className="d-block w-25 m-auto"
                           alt={data.title}
                         />
                       </div>
                       <div className="carousel-item">
                         <img
                           src={data.image2}
-                          className="d-block w-100"
+                          className="d-block w-25 m-auto"
                           alt={data.title}
                         />
                       </div>
                       <div className="carousel-item">
                         <img
                           src={data.image3}
-                          className="d-block w-100"
+                          className="d-block w-25 m-auto"
                           alt={data.title}
                         />
                       </div>
@@ -114,24 +116,21 @@ function Card(props) {
                 <br />
                 <br />
 
-                <br />
-                <br />
-
                 <Link to={"/testvite/home"} className="back-button">
-                  
                   Back
                 </Link>
               </>
             )}
             {showbutton && (
               <Link to={`/testvite/movie/${data.id}`} className="View-button">
-                View
+                Watch now
               </Link>
             )}
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 }
 export default Card;

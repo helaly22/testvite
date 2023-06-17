@@ -6,15 +6,28 @@ function Welcome() {
   return (
     <>
       <div className="box">
+        
         <div className="inner">
-          <img className="logo" src={img} alt="movie poster" />
+          <Link to={"/testvite/"}>
+          <img className="logo" src={img} alt="logo" />
+          </Link>
+          
           <div className="login">
             <Link to="/testvite/Sign-in">
               <button> Sign-in </button>
             </Link>
           </div>
           <div className="content">
-            <p>Watch All Cartoon Movies You Like,More </p>
+            <ul className="ul">
+              <li>W</li>
+              <li>E</li>
+              <li>L</li>
+              <li>C</li>
+              <li>O</li>
+              <li>M</li>
+              <li>E</li>
+            </ul>
+            <p>Watch All Cartoon Movies You Like </p>
             <Link to="/testvite/Sign-up">
               <button> {` Get Started > `} </button>
             </Link>

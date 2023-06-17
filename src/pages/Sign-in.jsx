@@ -60,7 +60,11 @@ function Sign_in() {
                 return (data.email == email) & (data.password == password)
                   ? ((showButton = false),
                     (
-                      <Link key={data.id} to={"/testvite/home"} className="Sign_in ">
+                      <Link
+                        key={data.id}
+                        to={"/testvite/home"}
+                        className="Sign_in "
+                      >
                         <button
                           key={data.id}
                           className="Sign_in link"
@@ -90,6 +94,11 @@ function Sign_in() {
                   </b>
                 </p>
               </div>
+              <p>
+                <b>
+                  <Link to={"/testvite/home"}>join as a guest</Link>
+                </b>
+              </p>
             </div>
           </div>
         </div>

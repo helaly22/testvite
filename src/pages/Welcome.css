@@ -12,7 +12,83 @@
     background-size: cover;
     background-position: center;
 }
+.ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50% ,-50%);
+    margin-top: 100px;
+    padding: 5px;
+    display: flex;
 
+}
+.ul li{
+    list-style: none ;
+    font-family: arial;
+    font-size: 3em;
+    letter-spacing: 15px;
+    text-shadow: none;
+    animation: animate 1s infinite linear;
+
+}
+@keyframes animate{
+    0%{
+        color: #484848;
+        text-shadow: none;
+    }
+    18%{
+        color: #484848;
+        text-shadow: none;
+    }
+    20%{
+        color: #25a9d1;
+        text-shadow: 0 0 7px #25a9d1,0 0 20px #14b5e6;
+    }
+    30%{
+        color: #484848;
+        text-shadow: none;
+    }
+    35%{
+        color:#25a9d1 ;
+        text-shadow:  0 0 7px #25a9d1 ,0 0 20px #14b5e6
+    }
+    70%{
+        color: #484848;
+        text-shadow:none;
+    }
+    85%{
+        color: #25a9d1;
+        text-shadow:  0 0 7px #25a9d1 ,0 0 20px #14b5e6
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;
+    }
+        100%{
+            color: #484848;
+            text-shadow: none;
+        }
+}
+.ul li:nth-child(1){
+    animation : animate .2s linear infinite alternate;
+}
+.ul li:nth-child(2){
+    animation : animate .4s linear infinite alternate;
+}
+.ul li:nth-child(3){
+    animation : animate .6s linear infinite alternate;
+}
+.ul li:nth-child(4){
+    animation : animate .8s linear infinite alternate;
+}
+.ul li:nth-child(5){
+    animation : animate 1s linear infinite alternate;
+}
+.ul li:nth-child(6){
+    animation : animate 1.2s linear infinite alternate;
+}
+.ul li:nth-child(7){
+    animation : animate 1.4s linear infinite alternate;
+}
 .box::before {
     content: "";
     position: absolute;
@@ -128,4 +204,41 @@
     right: 5%;
     font-size: 24px;
     font-weight: 900;
+}
+
+@media (max-width:768px) {
+    
+    .logo {
+        width: 10%;
+        position: absolute;
+        top: 3%;
+        right: 20%;
+        width: 65px;
+        height: 40px;
+    }
+    .content p{
+        font-size: 25px;
+        width: 234px;
+       
+    }
+    .login {
+        width: 10%;
+        position: absolute;
+        top: 3%;
+        right: 20%;
+        padding: 0;
+    }
+    .login button{
+        display: block;
+        width: 85px;
+        height: 40px;
+    }
+    .login a{
+        text-decoration: none !important;
+    }
+    .content button{
+        width: 100%;
+        height: 70%;
+        margin-top: 35px;
+    }
 }
