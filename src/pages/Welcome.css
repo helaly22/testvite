@@ -13,6 +13,7 @@
     background-position: center;
 }
 .ul{
+    left: 15%;
     position: absolute;
     top: 50%;
     transform: translateY(-50% ,-50%);
@@ -240,5 +241,7 @@
         width: 100%;
         height: 70%;
         margin-top: 35px;
+    }.ul{
+        display: none;
     }
 }

@@ -18,15 +18,7 @@ function Welcome() {
             </Link>
           </div>
           <div className="content">
-            <ul className="ul">
-              <li>W</li>
-              <li>E</li>
-              <li>L</li>
-              <li>C</li>
-              <li>O</li>
-              <li>M</li>
-              <li>E</li>
-            </ul>
+            
             <p>Watch All Cartoon Movies You Like </p>
             <Link to="/testvite/Sign-up">
               <button> {` Get Started > `} </button>
@@ -36,10 +28,20 @@ function Welcome() {
         <div className="kids-section">
           <div className="section-image"></div>
           <div className="section-title">
+            
             <p>
               Send kids on adventures with their favorite characters in a space
               made just for them
             </p>
+            <ul className="ul">
+              <li>W</li>
+              <li>E</li>
+              <li>L</li>
+              <li>C</li>
+              <li>O</li>
+              <li>M</li>
+              <li>E</li>
+            </ul>
           </div>
         </div>
       </div>
