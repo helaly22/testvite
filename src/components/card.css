@@ -11,7 +11,7 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
 }
 
 .carousel-control-prev-icon,
@@ -23,6 +23,21 @@ body {
     border-radius: 50%;
 }
 
+.x,
+.x {
+    height: 50px;
+    width: 50px;
+    color: black;
+    background-color: #b999e175;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+}
+
+.x:hover,
+.x:hover {
+    background-color: #b999e1e1;
+}
+
 .cards {
     color: whitesmoke;
     text-align: center;
@@ -31,11 +46,13 @@ body {
     margin-bottom: 15px;
     margin-top: 10px;
     padding: 10px 0px;
-    
+
 }
-.card-name{
+
+.card-name {
     font-size: 13px;
 }
+
 .cards img {
 
     width: 200px;

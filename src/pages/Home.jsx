@@ -4,15 +4,8 @@ import Card from "../components/card";
 import img from "../image/1.png";
 import "./nav.css";
 import { Link } from "react-router-dom";
-import Carousel from "../components/test";
+import AdvancedCarousel from "../components/Carousel";
 function Home() {
-  // const naiem = () => {
-  //   const hamburger = document.querySelector(".hamburger");
-  //   const nav = document.querySelector("nav");
-  //   hamburger.onclick = function () {
-  //     nav.classList.toggle("active");
-  //   };
-  // };
   const [datas, setData] = useState([]);
   const [Search, setSearch] = useState([]);
   const [Data, setDatas] = useState([]);
@@ -96,19 +89,14 @@ function Home() {
           ) : null;
         })}
       </div>
-
-      <Carousel />
+      <AdvancedCarousel />
       {Search == "" && (
         <div className="row1">
           {datas.map((data) => {
             return (
-              
-              <>
               <div key={data.id} className="show">
                 <Card className="cards" data={data} showbutton={true} />
               </div>
-            
-              </>
             );
           })}
         </div>
