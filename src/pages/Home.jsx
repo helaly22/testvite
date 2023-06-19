@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./Home.css";
 import Card from "../components/card";
 import img from "../image/1.png";
 import "./nav.css";
@@ -32,7 +31,6 @@ function Home() {
         <div className="header-left">
           <div className="logo1">
             <Link to={"/testvite/home"}>
-              {" "}
               <img src={img} alt="" />
             </Link>
           </div>

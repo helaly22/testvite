@@ -86,8 +86,7 @@ header input{
   margin-left: 89px;
   margin-top: 10px;
 }
-@media only screen and (max-width: 1000px) {
-  header {
+@media (max-width:1000px) and (min-width:500px) {  header {
     padding: 0 20px;
   }
   header .header-right .hamburger {
@@ -120,6 +119,9 @@ header input{
     margin-top: 20px;
   }
   header .header-right .login-signup {
+    display: none;
+  }
+  header .header-left nav{
     display: none;
   }
 }
