@@ -50,8 +50,8 @@ body {
     border-radius: 50%;
 }
 
-.x:hover,
-.x:hover {
+.left-x:hover,
+.right-x:hover {
     background-color: #b999e1e1;
 }
 

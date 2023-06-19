@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&family=Fjalla+One&family=La+Belle+Aurore&family=Lilita+One&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
+    font-family: 'Lilita One', cursive;
 }
 
 
@@ -279,8 +285,8 @@
     .section-title .ul {
         font-size: 8px;
         position: absolute;
-        top: -87%;
-        left: 30%;
+        top: -40%;
+        left: 45%;
         width: 100%;
         transform: translate(-50%);
     }
