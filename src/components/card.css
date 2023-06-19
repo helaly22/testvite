@@ -23,8 +23,25 @@ body {
     border-radius: 50%;
 }
 
-.x,
-.x {
+.Carousel {
+    position: relative;
+}
+
+.button-x {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 40%;
+}
+
+.right-x {
+    position: absolute;
+    right: 0%;
+}
+
+.left-x,
+.right-x {
+
     height: 50px;
     width: 50px;
     color: black;

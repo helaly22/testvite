@@ -15,41 +15,45 @@ const AdvancedCarousel = () => {
 
   return (
     <>
-      <ul
-        ref={scrollRef}
-        style={{
-          display: "flex",
-          overflow: "hidden",
-          scrollSnapType: "x mandatory",
-        }}
-      >
-        {data.map((data) => (
-          <li
-            key={data.id}
-            style={{
-              width: "250px",
-              height: "250px",
-              flexShrink: 0,
-              color: "#fff",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Link to={`/testvite/movie/${data.id}`}>
-              <img src={data.image} alt="" />
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <button onClick={() => prev()} className="x">{`<`}</button>
-        <button
-          onClick={() => {
-            next();
+      <div className="Carousel">
+        <ul
+          ref={scrollRef}
+          style={{
+            display: "flex",
+            overflow: "hidden",
+            scrollSnapType: "x mandatory",
           }}
-          className="x"
-        >{`>`}</button>
+        >
+          {data.map((data) => (
+            <li
+              key={data.id}
+              style={{
+                width: "250px",
+                height: "250px",
+                flexShrink: 0,
+                color: "#fff",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Link to={`/testvite/movie/${data.id}`}>
+                <img src={data.image} alt="" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div
+          className="button-x"
+        >
+          <button onClick={() => prev()} className="left-x">{`<`}</button>
+          <button
+            onClick={() => {
+              next();
+            }}
+            className="right-x"
+          >{`>`}</button>
+        </div>
       </div>
     </>
   );
